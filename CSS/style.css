@@ -1,0 +1,231 @@
+* {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+font-family: "Lato", serif;
+}
+
+/* Header*/
+
+header{
+    border-bottom: solid 2px #27667B;
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1{
+    color: #27667B;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.nav-links a, i {
+    color: #27667B;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+}
+
+a :active {
+    color: #143D60;
+}
+
+.nav-links i {
+    padding: 0.4em;
+
+}
+
+
+
+.myprojects{
+    color: #27667B;
+    margin-left: 17%;
+    font-size: 2rem;
+    
+}
+
+.sectioncontainer {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    width: 100%;
+    gap: 10%;
+}
+
+.sectionone{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.sectiontwo{
+    border: solid #27667B;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.sectiontwo p {
+    margin: 2rem;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button{
+    width: 150px;
+    background-color: #27667B;
+    color: white;
+    border-radius: 15px;
+    padding: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 1s ease;
+}
+
+.btn button:hover{
+    background-color: #143D60;
+}
+
+h2 {
+    margin: 2rem;
+    color: #27667B;
+}
+
+img{
+    border-radius: 10%;
+    width: 100%;
+}
+
+
+
+/* Project Cards*/
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.card-body h2{
+    text-align: center;
+
+}
+
+.card-body p{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-footer button{
+    width: 150px;
+    background-color: #27667B;
+    color: white;
+    border-radius: 15px;
+    padding: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 1s ease;
+}
+
+.card-footer button:hover{
+    background-color: #143D60;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+footer i {
+    margin: 5px;
+    font-size: 1.5em;    
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 1019px) {
+    .sectioncontainer {
+        flex-wrap: wrap;
+    }
+    .sectiontwo {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 591px) {
+
+    .sectioncontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    
+    .sectionone {
+        max-width: 60%;
+        margin-right: 2em;
+    }
+
+    .sectiontwo {
+        min-width: 60%;
+        margin-right: 3em;
+    }
+
+
+    .navcontainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 5px;
+    }
+ 
+}

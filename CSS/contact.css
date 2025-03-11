@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato", serif;
+    }
+    
+
+
+/* Header*/
+
+    header{
+        border-bottom: solid 2px #27667B;
+    }
+    
+    .navcontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    h1{
+        color: #27667B;
+    }
+    
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    
+    .nav-links a, i {
+        color: #27667B;
+    }
+    
+    
+    .nav-links a {
+        text-decoration: none;
+    }
+    
+    .nav-links i {
+        padding: 0.4em;
+    }
+    
+
+/*Contact form */
+
+
+    .formcontainer {
+        width: 80%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    }
+
+    .formcontainer h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    } 
+
+    form input, form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        background-color: #f7f7f7;
+        border-radius: 50px;
+    }
+
+    form input, form textarea {
+        outline: none;
+        box-shadow: 0 0 5px #333;
+    }
+
+    form button{
+        display: block;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #27667B;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    form button:hover{
+        background-color: #143D60;
+    }
+
+/* Footer*/
+
+
+
+    footer{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        margin-top: auto;
+        
+    }
+    
+    footer i {
+        margin: 5px;
+        font-size: 1.5em;
+    } 
+    
+
+    /* Responsiv design */
+
+    @media screen and (max-width: 690px) {
+        .navcontainer {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .nav-links {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+    
+        .nav-links a {
+            padding: 5px;
+        }
+    }
+        
+    
+

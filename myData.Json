@@ -2,6 +2,7 @@
     "name": "Emelie Larell",
     "email": "emelielarell@hotmail.se",
     "phone": "704777951",
+    "utbildning": "Borås yrkeshögskola, Front end React",
     "yrkeserfarenhet": [
     {
         "jobtitle": "Handläggare systemstöd",
@@ -23,4 +24,8 @@
         ]
     }
     ]
+
+    
+
+    
 }

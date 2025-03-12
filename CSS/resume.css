@@ -44,32 +44,23 @@
     
 /* Main */
 
-    .resumebox {
-        width: 50%;
-        margin: 50px auto;
-        padding: 20px;
-        text-align: center;
-    }
 
-    ul {
-        
-        padding-left: 20px;
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    }
+h2{
+    color: #27667B;
+    text-align: center;
+    margin: 5%;
+}
 
-    h4{
-        background-color: #27667B;
-        color: white;
-    }
+#content{
+    margin-left: 28%;
+    margin-bottom:  6%;
+}
 
-    h2{
-        color: #27667B;
-        margin: 5%;
-    }
-
-    p {
-        padding: 1%;
-    }
 
 /* Footer */
 

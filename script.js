@@ -27,18 +27,10 @@ function cvData () {
                 myList.appendChild(listItem);
             }
 
-        
-
-        
-
             
             box1.appendChild(myPara1);
             box1.appendChild(myList);
             
-
-            
-
-
         }
     })
 }
@@ -74,7 +66,6 @@ const closeCross = document.getElementById("closeCross");
 
 modalBtn.addEventListener("click", openModal);
 closeCross.addEventListener("click", closeModal);
-
 
 
 function openModal(){

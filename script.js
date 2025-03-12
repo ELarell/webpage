@@ -68,12 +68,19 @@ cvData();
 
 // Modal popup på kontaktformulär
 
-const modal = document.getElementById("btnmodal");
-const formBtn = document.getElementById("formBtn");
-const cross = document.getElementById("closecross");
+const modal = document.getElementById("myModal");
+const modalBtn = document.getElementById("modalBtn");
+const closeCross = document.getElementById("closeCross");
 
-formBtn.addEventListener(`click`, showModal);
+modalBtn.addEventListener("click", openModal);
+closeCross.addEventListener("click", closeModal);
 
-function showModal() {
+
+
+function openModal(){
     modal.style.display = "block";
+}
+
+function closeModal(){
+    modal.style.display = "none";
 }

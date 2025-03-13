@@ -8,11 +8,12 @@ function cvData () {
         const myPara2 = document.createElement("p");
         const box1 = document.getElementById("box1");
         const box2 = document.getElementById("box2");
-        const jobs = data.yrkeserfarenhet;
-        const container = document.getElementById("container");
+
 
         myPara2.innerHTML = `<strong>Utbildning:</strong> ${data.utbildning}`;
+        box2.appendChild(myPara2);
 
+        const jobs = data.yrkeserfarenhet;
         for (const job of jobs) {
             const myPara1 = document.createElement("p");
             const myList = document.createElement("ul"); 
@@ -31,30 +32,12 @@ function cvData () {
             box1.appendChild(myPara1);
             box1.appendChild(myList);
             
+            
         }
     })
 }
 
 cvData();
-
-
-
-// function testfunction () {
-//     const test = document.getElementById("test");
-//     const list = document.createElement("ul");
-//     const punkt = document.createElement("li");
-//     punkt.textContent = ("hello");
-
-
-//     list.appendChild(punkt);
-//     test.appendChild(list);
-    
-// }
-
-// testfunction();
-
-
-
 
 
 
